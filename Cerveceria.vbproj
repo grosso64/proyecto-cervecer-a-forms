@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{811965AE-2717-4687-84AE-1700E7A8FAE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Cerveceria.My.MyApplication</StartupObject>
+    <RootNamespace>Cerveceria</RootNamespace>
+    <AssemblyName>Cerveceria</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Cerveceria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Cerveceria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adminicio.Designer.vb">
+      <DependentUpon>Adminicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Adminicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminmenu.Designer.vb">
+      <DependentUpon>Adminmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Adminmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminmer.Designer.vb">
+      <DependentUpon>Adminmer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Adminmer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clieinicio.Designer.vb">
+      <DependentUpon>Clieinicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clieinicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Designer.vb">
+      <DependentUpon>Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientesmenu.Designer.vb">
+      <DependentUpon>Clientesmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientesmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clireg.Designer.vb">
+      <DependentUpon>Clireg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clireg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logincli.Designer.vb">
+      <DependentUpon>Logincli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logincli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginprov.Designer.vb">
+      <DependentUpon>Loginprov.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loginprov.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="proveedor.Designer.vb">
+      <DependentUpon>proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvInicio.Designer.vb">
+      <DependentUpon>ProvInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProvInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="provmenu1.Designer.vb">
+      <DependentUpon>provmenu1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="provmenu1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Provreg.Designer.vb">
+      <DependentUpon>Provreg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Provreg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Adminicio.resx">
+      <DependentUpon>Adminicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminmenu.resx">
+      <DependentUpon>Adminmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminmer.resx">
+      <DependentUpon>Adminmer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clieinicio.resx">
+      <DependentUpon>Clieinicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientesmenu.resx">
+      <DependentUpon>Clientesmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clireg.resx">
+      <DependentUpon>Clireg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logincli.resx">
+      <DependentUpon>Logincli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginprov.resx">
+      <DependentUpon>Loginprov.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="proveedor.resx">
+      <DependentUpon>proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProvInicio.resx">
+      <DependentUpon>ProvInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="provmenu1.resx">
+      <DependentUpon>provmenu1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Provreg.resx">
+      <DependentUpon>Provreg.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
